@@ -10,10 +10,18 @@
 #-------------------------------------------------------------------------------
 #!/usr/bin/env python
 
+try:
+    #Python 3
+    import tkinter as tk
+    from tkinter import messagebox
+    from tkinter import ttk
+except:
+    #Python 2.7
+    import Tkinter as tk
+    import ttk
+    import tkMessageBox
+
 from lxml import etree as ET
-import Tkinter as tk
-import ttk
-import tkMessageBox
 import tkHyperlinkManager
 
 large_font = ("Verdana", 12)
